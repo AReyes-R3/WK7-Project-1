@@ -1,0 +1,25 @@
+#body {
+    background-image: url("./images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    MARGIN-LEFT: 30PX;
+    MARGIN-TOP: 30PX;
+}
+
+#search-bar {
+    width: 400px;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 500px;
+}
