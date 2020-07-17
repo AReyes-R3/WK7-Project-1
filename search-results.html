@@ -6,67 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- CSS only -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!--Search-Results Style Sheet-->
+    <link rel="stylesheet" href="./search-results.css">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+
+<!--Row 1 Black Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <!--Search Bar Section-->
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
-    </form>
-    </div>
-</nav>
+        </button>
+    </nav>
 
-<body>
+</body>
+    <!--Song Title and Artist-->
+    <div class="song title"></div>
 
-    <style>
-        nav {
-
-            background-color: black;
-            width: 100%;
-            height: 50px;
-            text-align: center;
-
-        }
-    </style>
-    </head>
-
-    <body>
-
-        <!--Black Nav Bar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">MYVOICE</a>
-        </nav>
-        <!--Search Button-->
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <form class="form-inline my-2 my-lg-0" style="margin-left: 60px;">
-                <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+<main class="container-fluid"> 
+<!--Row 2-->
+<div class="container">
+    <div class="row">
+        <!--Lyrics Section-->
+        <div class="col-md-4" id="lyrics">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search for Song Title" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
             </form>
-        </div>
-    </body>
-    <!--Song Title and Artist-->
-
-    <!-- <main class="container-fluid"> -->
-    <!--Row 2-->
-    <div class="container">
-        <div class="row">
-
-            <!--Lyrics Section-->
-            <div class="col-md-4">
-                lyrics section - Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+            <br>
+            <p>lyrics section - Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
                 print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century
                 who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type
                 specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
@@ -75,42 +44,41 @@
                 book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
                 web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to
                 have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
-            </div>
-            <!--Music Video Section-->
-            <div class="col-md-8">
-                music video section - Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
-                print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century
-                who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type
-                specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
-                graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
-                web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to
-                have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+            </p>
+        </div>
+
+        <!--Music Video Section-->
+        <div class="col-md-8" id="video">
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gl1aHhXnN1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--Searc Bar for Artist's Music Video-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search for Artist" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
+            </form>
+            <br>
             
-                <!--Album Art Section-->
-            <div class="col-md-8">
-                Albume art section - Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
-                out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th
-                century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in
-                a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying
-                ut print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th
-                    
+        <!--Album Art Section-->
+        <p>Images of Album Artwork</p>
+            <div class="col-md-8" id="albumArt">
+                <img src="https://media.allure.com/photos/5e2e23dc43309300092e7319/1:1/w_727,c_limit/grammy%20best%20looks%202020%20ariana%20grande.jpg" alt="Ariana Grande" style="width:200px;height:200px;" >
+                <img src="https://media.allure.com/photos/5e2e23dc43309300092e7319/1:1/w_727,c_limit/grammy%20best%20looks%202020%20ariana%20grande.jpg" alt="Ariana Grande" style="width:200px;height:200px;" >
+
             </div>
         </div>
     </div>
 
-        <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-</body>
+    </body>
 
 </html>
