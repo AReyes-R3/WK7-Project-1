@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="../MyVoice/script3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <title>Document</title>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!--Search-Results Style Sheet-->
-    <link rel="stylesheet" href="./search-results.css">
 </head>
 
 <!--Row 1 Black Bar-->
@@ -35,6 +39,7 @@
         <div class="row">
 
             <!--Lyrics Section-->
+            <!--Search Bar for Song Title-->
             <div class="col-md-4" id="lyrics">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search for Song Title"
@@ -42,7 +47,13 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
                 </form>
                 <br>
-           
+                <!--Search Bar for Artist-->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search for Artist"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
+                </form>
+
                 <!--Song Title and Artist-->
                 <div class="song title" style="font-size:15px;color:blue;">Song Title:</div>
                 <div class="artist" style="font-size:15px;color:blue;">Atrist:</div>
@@ -70,12 +81,20 @@
                 <h6>Video Title</h6>
                 <p class="description" Video Description>Description</p>
 
-                <!--Searc Bar for Artist's Music Video-->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search for Artist"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search</button>
-                </form>
+
+                <!--Anthonys Code-->
+                <button onclick="authenticate().then(loadClient)">authorize and load</button>
+                <button onclick="execute()">execute</button>
+                <iframe id="existing-iframe-example" width="480" height="270"
+                    src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1" frameborder="0"
+                    style="border: solid 4px #37474F"></iframe>
+                <div class="row justify-content-sm-center" id="searchArea">
+                    <input type="text" id="search" placeholder="Song Name">
+                    <button id="submit" type="submit"><i class="fa fa-search">MyVoice</i></button>
+                    <br>
+                </div>
+
+
 
                 <!--Album Artwork Section-->
                 <p>Images of Album Artwork</p>
