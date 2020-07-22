@@ -1,10 +1,26 @@
+#searchSongTitle,
+#searchArtist {
+    border-radius: 0px;
+    border-color: black;
+}
+
 .btn {
     display: inline-block;
+    background-color: black;
+    color: white; 
     font-weight: 400;
-    color: black;
     text-align: center;
     vertical-align: middle;
     border-radius: 0px;
+    width: 50px;
+}
+
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none; 
+    border-radius: 0;
 }
 
 .btn-outline-success,
@@ -12,17 +28,12 @@
     color: #fff;
     background-color: black;
     border-color: black;
+    border-radius: 0;
 }
 
 br {
     display: block;
     margin: 50px 0;
-}
-
-#searchSongTitle,
-#searchArtist {
-    border-radius: 0px;
-    border-color: black;
 }
 
 .form-inline {
@@ -34,4 +45,10 @@ br {
     padding-right: 10px;
     padding-left: 10px;
     text-align: left;
+}
+.albumArt {
+    border: solid 1px black;
+    padding-right: 10px;
+    padding-left: 10px;
+    
 }

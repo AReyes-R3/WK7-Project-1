@@ -49,27 +49,39 @@
                         <form class="input-group mb-2">
                             <input class="form-control" id="searchSongTitle" type="search" placeholder="Search for Song Title"
                                 aria-label="Search">
-                            <button class="btn btn-outline-success" id="submit" type="submit">Search</button>
+                                <button class="btn btn-outline-dark" id="submit" type="submit">
+                                    <i style='font-size:20px' class='fas'>&#xf002;</i>    
+                                </button>
                         </form>
 
                         <!--Search Bar for Artist-->
                         <form class="input-group mb-2">
                             <input class="form-control" id="searchArtist" type="search" placeholder="Search for Artist"
                                 aria-label="Search">
-                            <button class="btn btn-outline-success" id="submit" type="submit">Search</button>
+                            <button class="btn btn-outline-dark" id="submit" type="submit">
+                                <i style='font-size:20px' class='fas'>&#xf002;</i>    
+                            </button>
+                           
                         </form>
+
+                        <!--Box for Lyrics Results-->
                         <div class="lyricsResults">
-                            <div class="song title" style="font-size:15px;color:blue;">Song Title:</div>
-                            <div class="artist" style="font-size:15px;color:blue;">Artist:</div>
+                            <!-- <div class="song title" style="font-size:15px;color:blue;">Song Title:</div>
+                            <div class="artist" style="font-size:15px;color:blue;">Artist:</div> -->
                             <strong style="font-size:30px;">Lyrics</strong>
-                            <!-- <p>Lyrics</p> -->
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                            <br>
+                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                            <br>
+                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter
+                            </p> 
                         </div>
                     </div>
 
                     <!--Music Video Section-->
                     <div class="col-md-8" id="video">
                         <br>
-                        <!--Anthony's Code for Video Search Result-->
+                        <!--Anthony's Code for Music Video Search Result-->
                         <div class="col-md-6" id="video">
                             <button onclick="authenticate().then(loadClient)" style="border-color:black; ;">Step 1
                             LOGIN:</button>
@@ -87,10 +99,12 @@
                             </form>
 
                             <!--Album Artwork Section-->
-                            <!-- <p>Images of Album Artwork</p>
+                            <!-- <p>Images of Album Artwork</p> -->
                             <div class="col-md-8" id="albumArt">
-                                <iframe src=""></iframe>
-                            </div> -->
+                                <img src="images\albumart.png" alt="Album Covers" width="480" height="280">
+                                <!-- <iframe src="">                                       
+                                </iframe> -->
+                            </div> 
                         </div>
                     </div>
 
